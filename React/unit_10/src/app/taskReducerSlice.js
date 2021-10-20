@@ -12,11 +12,20 @@ export const taskReducerSlice = createSlice({
     },
     minus: (state, data) => {
       state.value -= +data.payload;
+    },
+    multi: (state, data) => {
+      state.value *= +data.payload;
+    },
+    division: (state, data) => {
+      state.value /= +data.payload;
+    },
+    textadd: (state, data) => {
+      state.text += data.payload;
     }
   },
 });
 
-export const { add,minus, showConsole } = taskReducerSlice.actions;
+export const { add,minus,multi,division,textadd, showConsole } = taskReducerSlice.actions;
 
 export const selectValue = state => state.taskReducer.value;
 export const selectTest = state => state.taskReducer.text;
