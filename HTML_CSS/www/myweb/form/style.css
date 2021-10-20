@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #121212;
+
+    background-color: #03038f;
+}
+
+/* auth */
+
+.auth {
+    width: 260px;
+    padding: 20px;
+    margin: 20px auto;
+
+    background-color: white;
+}
+
+.auth-title {
+    margin: 0 0 15px;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* input */
+
+.input {
+    display: block;
+    width: 238px;
+    padding: 5px 10px;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.input:focus {
+    outline: 0;
+    border-color: #73bfd8;
+}
+
+/* select */
+
+.select-city {
+    display: block;
+    width: 260px;
+    height: 29px;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.select-city:focus {
+    outline: 0;
+    border-color: #73bfd8;
+}
+
+/* btn */
+
+.btn {
+    display: block;
+    width: 260px;
+    padding: 10px;
+
+    border: 0;
+    background-color: #0cd157;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-style: initial;
+    color: #ffffff;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #04a11f;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: #09881e;
+}

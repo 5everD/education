@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #121212;
+
+    background-color: #f4f4f4;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/* Global
+===============*/
+
+p {
+    margin: 0 0 10px;
+}
+
+.container {
+    width: 800px;
+    padding: 15px;
+    margin: 20px auto;
+}
+
+.title {
+    margin: 0 0 15px;
+
+    font-size: 30px;
+    color: #f58400;
+}
+
+
+/* Header
+===============*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+
+    background-color: #1265d6;
+    border-radius: 10px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Benefits
+===============*/
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.benefits-item {
+    width: 31%;
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.benefits-title {
+    margin: 0 0 15px;
+
+    font-size: 21px;
+    color: #333;
+}
+
+.benefits-icon {
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+/* Article
+===============*/
+.article {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.article-content {
+    padding: 20px;
+}
+
+.article-title {
+    
+    margin: 0 0 15px;
+
+    font-size: 21px;
+    color: #1265d6;
+}
+

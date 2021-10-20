@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.square {
+    width: 200px;
+    height: 50px; 
+    margin: 100px auto;
+
+    background-color: rgba(102, 120, 182, 0.637);
+    border-radius: 0 0 10px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    border-top: unset;
+    
+    transform-origin: top;
+    transform: rotateX(30deg);
+
+    transition: transform .2s linear ;
+}
+.square:hover {
+    background-color: rgba(102, 120, 182, 0.9);
+
+    transform-origin: top;
+    transform: rotateX(0);
+}
+
+.composition {
+    margin: 0 auto;
+    width: 640px;
+    max-width: 640px;
+    display: flex;
+    border-color: blue;
+}
+
+.squareq {
+    width: 200px;
+    height: 200px; 
+    margin: 100px auto;
+
+    background-color: red;
+    border-radius: 10px;
+        
+    transform: rotate3d(1, 1, 1, 45deg);
+
+    transition: transform .2s linear ;
+}
+
+.compositionq {
+    perspective: 500px;
+}

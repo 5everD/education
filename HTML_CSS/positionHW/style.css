@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #121212;
+}
+
+.container {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+    width: 360px;
+    padding: 20px;
+    position: fixed;
+    z-index: 150;
+    margin-left: -180px;
+        
+    top: 100px;
+    left: 50%;
+
+    background-color: #fff;
+}
+
+.modal-close {
+    padding: 0;
+
+    background: none;
+    border: 0;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}

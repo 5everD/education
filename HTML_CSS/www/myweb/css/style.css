@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    background-color: black;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.title {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.justify {
+    text-align: justify;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+
+    color: #114eaf;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+
+
+.table {
+    border: 2px solid #333;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    padding: 5px 10px;
+    text-align: left;
+    color: deeppink;
+}
+
+.table td {
+    padding: 5px 10px;
+    border: 1px solid #333;
+}
+
+.table tfoot tr td {
+    text-align: right;
+}
+
+
+
+.content {
+    margin: 10px 50px 100px 50px;
+}
+
+/* Form */
+
+.form {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+
+    background-color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.form-input {
+    display: block;
+    padding: 5px;
+
+    border: 1px solid #000;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.form-textarea {
+    width: 400px;
+    height: 100px;
+    padding: 5px;
+
+    border: 1px solid #000;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

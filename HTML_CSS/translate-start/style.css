@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    width: 300px;
+    margin: 200px auto;
+    position: relative;
+    
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+
+    transition: transform .2s linear, box-shadow .2s linear;
+}
+
+.card:hover .card-avatar {
+    transform: translate3d(-50%, -60%, 0);
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+
+    transform: translateY(-10px);
+}
+
+.card-avatar {
+    border-radius: 50%;
+
+    position: absolute;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0);
+
+    transition: transform .2s linear;
+}
+
+.card-content {
+    padding: 100px 20px 20px;
+}
+
+.card-title {
+    margin: 0 0 15px;
+
+    font-size: 24px;
+    color: red;
+}
+
+.card-text {
+    font-size: 14px;
+    text-align: justify;
+}

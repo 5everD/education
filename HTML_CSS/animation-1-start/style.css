@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+
+    animation-name: translateX;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes translateX {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+        background-color: #de3232;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    100% {
+        transform: translateX(500px) translateY(100px) rotate(180deg) scale(0.5);
+        background-color: #0a40b9;
+    }
+}

@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+}
+
+/* modal */
+
+
+.modal {
+    width: 500px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 15px;
+    position: relative;
+
+    background-color: #eee;
+}
+
+.model-title {
+    margin: 0;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+
+    background-color: #333;
+
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 2;
+}
+
+.square.red {
+    background-color: #ff0000;
+    right: -15px;
+    top: -5px;
+    z-index: 1;
+}
+
+.square-fixed {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+
+    background-color: #333;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1
+}
+
+/* Psevdo */
+
+.psevdo-title {
+    margin: 0;
+
+    font-size: 30px;
+}
+
+.psevdo-title::before {
+    content: "1.";
+}
+
+.psevdo-title::after {
+    content:"";
+    display: block;
+    width: 50px;
+    height: 3px;
+
+    background-color: #be1111;
+}
+
+.psevdo-text::first-line {
+    color: red;
+}

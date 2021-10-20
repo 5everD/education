@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Форма</title>
+    </head>
+    <body>
+        <div class="form">
+            <h1 class="form-header">Личные данные</h1>
+            <form class="form-zone" action="/" method="post">
+                <div class="form-group">
+                    <label for="male">Муж</label>
+                    <input type="radio" name="choose_male" id="male">
+                    <label for="female">Жен</label>
+                    <input type="radio" name="choose_male" id="female">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="text" name="name" placeholder="Ваше имя">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="email" name="email" placeholder="Ваш e-mail">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="tel" name="tel" placeholder="Ваш номер телефона">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="text" name="adres" placeholder="Адрес проживания">
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-textarea" name="text" placeholder="Информация о вас"></textarea>
+                </div>
+            </form>
+
+            <h1 class="form-header">Безопасность</h1>
+            <form class="form-zone" action="/" method="post">
+                <div class="form-group">
+                    <input class="form-input" type="password" name="password" placeholder="Старый пароль">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="password" name="password" placeholder="Новый пароль">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="password" name="password" placeholder="Новый пароль еще раз">
+                </div>
+
+                <div class="form-group">
+                   <select class="form-secret" name="question" placeholder="Секретный вопрос">
+                       <option>Секретный вопрос</option>
+                       <option>Секретный вопрос</option>
+                   </select>
+                </div>
+
+                <div class="form-group">
+                    <input class="form-input" type="password" name="password" placeholder="Ответ на секретный вопрос">
+                </div>
+
+            </form>
+
+            <h1 class="form-header">Оповещения</h1>
+            <form class="form-zone" action="/" method="post">
+                <div class="form-group">
+                    <input type="checkbox" name="check_box_name" id="check_box">
+                    <label for="check_box">Получать новости на e-mail</label>
+                    <br><br>
+                    <input type="checkbox" name="check_box_name" id="check_box">
+                    <label for="check_box">Получать информацию о скидках</label>
+                </div>
+
+                <button class="button-sub" type="submit">Сохранить</button>
+                <button class="button-res" type="reset">Отменить и очистить</button>
+            </form>
+        </div>
+    </body>
+</html>

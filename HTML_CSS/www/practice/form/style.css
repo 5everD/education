@@ -1,0 +1,96 @@
+body {
+    background-color: #f2f2f2;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    color: #121212;
+}
+
+/* Form */
+
+.form {
+    margin: 20px auto;
+    padding: 20px;
+    width: 357.5px;
+    background-color: white;
+    border: 1px solid #d0d0d0;
+}
+
+.form-header {
+    font-size: 18px;
+    color: #1784bc;
+    margin-bottom: 15px;
+}
+
+.form-zone {
+    margin-bottom: 40px;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    color: #121212;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-input {
+    background-color: white;
+    width: 348px;
+    padding: 5px;
+    border: 1px solid #d0d0d0;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    color: #121212;
+}
+
+.form-textarea {
+    width: 348px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #d0d0d0;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    color: #121212;
+}
+
+.form-secret {
+    background-color: white;
+    width: 359px;
+    padding: 5px;
+    border: 1px solid #d0d0d0;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    color: #121212;
+}
+
+.button-sub {
+    height: 40px;
+    margin-right: 5px;
+    border: 1px solid #d0d0d0;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #97c89a;
+}
+
+.button-res {
+    height: 40px;
+    margin-right: 5px;
+    border: 1px solid #d0d0d0;
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #acacac;
+}
+
+
+
+
+
+
+
+
+
+
+
+

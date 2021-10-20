@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Jura';
+    src: url("fonts/jura-300.woff") format('woff'),
+         url("fonts/jura-300.woff2") format('woff2');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url("fonts/jura-700.woff") format('woff'),
+         url("fonts/jura-700.woff2") format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url("fonts/jura-regular.woff") format('woff'),
+         url("fonts/jura-regular.woff2") format('woff2');
+}
+
+body {
+    margin: 0;
+
+    background-color: #f4f4f4;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #121212;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 30px 0;
+}
+
+.container {
+    width: 800px;
+    padding: 30px;
+    margin: 20px auto;
+
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+}
+
+.google-fonts-title {
+    font-family: 'Lora', serif;
+}
+
+.google-fonts-text {
+    font-family: 'Caveat', cursive;
+}
+
+.google-fonts-title,
+.local-fonts-title {
+    margin: 20px 0;
+
+    font-size: 30px;
+    color: #e53030;
+}
+
+.local-fonts {
+    font-family: 'Jura';
+}
+
+.local-fonts-title {
+    font-weight: 400;
+}
+
+.local-fonts-text {
+    font-weight: 300;
+}

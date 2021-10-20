@@ -1,0 +1,26 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.table thead {
+    background-color: #eee;
+}
+
+.table tfoot {
+    background-color: #ccc;
+}
