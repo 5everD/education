@@ -1,7 +1,7 @@
 const initialState = {
-  users: [
+  user: [
     {
-      passport: '0000 000000',
+      passport: '1234 567890',
       name: 'John',
       age: 36,
     }
