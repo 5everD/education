@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
 
 export const cartSlice = createSlice({
     name: 'cart',
@@ -7,13 +7,13 @@ export const cartSlice = createSlice({
     },
     reducers: {
         increment: (state, data) => {
-            let articul = data.payload;
-            if (state.value[articul] === undefined) state.value[articul] = 0;
-            state.value[articul]++;
+            const article = data.payload;
+            (state.value[article] === undefined) && (state.value[article] = 0);
+            state.value[article]++;
         }
     }
 });
 
-export const { increment } = cartSlice.actions;
+export const {increment} = cartSlice.actions;
 export const selectCart = state => state.cart.value;
 export default cartSlice.reducer;
