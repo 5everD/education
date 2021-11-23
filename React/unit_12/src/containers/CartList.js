@@ -15,8 +15,8 @@ export default function CartList() {
 
 
     return (
-            <Cart
-                onClick ={clickHandler}
-            />
+        <Cart
+            onClick={clickHandler}
+        />
     );
 }

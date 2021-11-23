@@ -36,9 +36,9 @@ export default function Cart(props) {
                     <tr>
                         <td><img src={goodsObj[item]['image']} alt={goodsObj[item]['title']} height={20}/></td>
                         <td>{goodsObj[item]['title']}</td>
-                        <td>{goodsObj[item]['cost']}</td>
-                        <td>{cart[item]}</td>
-                        <td>{cart[item] * goodsObj[item]['cost']}</td>
+                        <td>{goodsObj[item]['cost']} денег</td>
+                        <td>{cart[item]} шт.</td>
+                        <td>{cart[item] * goodsObj[item]['cost']} денег</td>
                         <td>
                             <button
                                 className="minus-from-cart"
@@ -60,13 +60,7 @@ export default function Cart(props) {
                 )}
                 <tfoot>
                 <tr>
-                    <th>ИТОГО: </th>
-                    <th> </th>
-                    <th> </th>
-                    <th> </th>
-                    <th>{sum} </th>
-                    <th> </th>
-                    <th> </th>
+                    <th>ИТОГО: {sum} денег</th>
                 </tr>
                 </tfoot>
             </table>
