@@ -6,12 +6,15 @@ import {selectCart} from '../store/cartSlice';
 export default function Cart(props) {
     const goods = useSelector(selectGoods);
     const cart = useSelector(selectCart);
+    const onClick = props.onClick
     const goodsObj = goods.reduce((accum, item) => {
         accum[item['article']] = item;
         return accum;
     }, {});
-    const handleMinus = props.handleMinus
-    const handleDelete = props.handleDelete
+    const sum = Object.keys(cart).reduce((accum, item) => {
+        accum = accum + cart[item] * goodsObj[item]['cost'];
+        return accum;
+    }, 0);
 
 
     return (
@@ -19,21 +22,19 @@ export default function Cart(props) {
             <table>
                 <thead>
                 <tr>
+                    <th> Изображение товара</th>
                     <th> Название товара</th>
                     <th> Цена за единицу</th>
                     <th> Количество</th>
                     <th> Стоимость</th>
-                    <th>
-                        Уменьшить
-                    </th>
-                    <th>
-                        Удалить
-                    </th>
+                    <th> Уменьшить</th>
+                    <th>Удалить</th>
                 </tr>
                 </thead>
                 {Object.keys(cart).map(item =>
                     <tbody key={item + goodsObj[item]['title']}>
                     <tr>
+                        <td><img src={goodsObj[item]['image']} alt={goodsObj[item]['title']} height={20}/></td>
                         <td>{goodsObj[item]['title']}</td>
                         <td>{goodsObj[item]['cost']}</td>
                         <td>{cart[item]}</td>
@@ -42,21 +43,32 @@ export default function Cart(props) {
                             <button
                                 className="minus-from-cart"
                                 data-key={item}
-                                onClick={handleMinus}
+                                onClick={onClick}
                             >Minus
                             </button>
                         </td>
                         <td>
                             <button
-                                className="delete-from-cart"
+                                className="remove-from-cart"
                                 data-key={item}
-                                onClick={handleDelete}
+                                onClick={onClick}
                             >Delete
                             </button>
                         </td>
                     </tr>
                     </tbody>
                 )}
+                <tfoot>
+                <tr>
+                    <th>ИТОГО: </th>
+                    <th> </th>
+                    <th> </th>
+                    <th> </th>
+                    <th>{sum} </th>
+                    <th> </th>
+                    <th> </th>
+                </tr>
+                </tfoot>
             </table>
         </div>
     );

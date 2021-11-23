@@ -5,7 +5,7 @@ import {
 } from '../store/goodsSlice';
 
 import Goods from '../components/Goods';
-import {increment} from '../store/cartSlice';
+import {increment, decrement} from '../store/cartSlice';
 
 /**
  * get data from store
@@ -19,7 +19,9 @@ export default function GoodsList() {
         event.preventDefault();
         const targetClick = event.target;
         if (!targetClick.classList.contains('add-to-cart')) return true;
-        dispatch(increment(targetClick.getAttribute('data-key')));
+        targetClick.classList.contains('add-to-cart') && dispatch(increment(targetClick.getAttribute('data-key')));
+        targetClick.classList.contains('minus-from-cart') && dispatch(decrement(targetClick.getAttribute('data-key')));
+        targetClick.classList.contains('delete-from-cart') && dispatch(increment(targetClick.getAttribute('data-key')));
     }
 
     return (
