@@ -3,10 +3,19 @@ import React, {useState, useEffect} from 'react';
 
 
 export default function App() {
+    const [t1, setT1] = useState('')
 
 
     function task1() {
-
+        fetch('http://unit14.ru/api.php', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded'
+            },
+            body: JSON.stringify({action: 1})
+        })
+            .then(res=>res.text())
+            .then(res=>setT1(res))
     }
 
     function task2(event) {
@@ -28,7 +37,7 @@ export default function App() {
     return (
         <div>
             <h1>ItGid.info</h1>
-            <p>{text}</p>
+            <p>{t1}</p>
             <hr/>
             <div>
                 <h2>Время сервера</h2>
@@ -61,15 +70,15 @@ export default function App() {
                 <form action="" onSubmit={task4}>
                     <button type="sumbit">Push</button>
                 </form>
-                <p>{t4}></p>
-                    <hr/>
-                    <div>
-                        <h2>Получение курса валют</h2>
-                        <form action="" onSubmit={task5}>
-                            <button type="sumbit">Push</button>
-                        </form>
-                        <ul></ul>
-                    </div>
+                {/*<p>{t4}></p>*/}
+                <hr/>
+                <div>
+                    <h2>Получение курса валют</h2>
+                    <form action="" onSubmit={task5}>
+                        <button type="sumbit">Push</button>
+                    </form>
+                    <ul></ul>
+                </div>
             </div>
         </div>
     )
