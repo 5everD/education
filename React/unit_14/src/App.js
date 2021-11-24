@@ -3,19 +3,23 @@ import React, {useState, useEffect} from 'react';
 
 
 export default function App() {
+    const [t1, setT1] = useState('');
     const url = 'http://unit14.ru/api.php';
-    const headers = {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/x-www-form-urlencoded'
-        },
-        body: JSON.stringify({action: 1})
-    }
-    const [t1, setT1] = useState('')
+    const headers = (task) => {
+        return (
+            {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/x-www-form-urlencoded'
+                },
+                body: JSON.stringify(task)
+            }
+        );
+    };
 
 
     function task1() {
-        fetch(url, headers)
+        fetch(url, headers({action: 1}))
             .then(res => res.text())
             .then(res => setT1(res))
     }
