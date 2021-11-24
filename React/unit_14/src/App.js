@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 import './App.css';
 
@@ -26,7 +26,8 @@ export default function App() {
     }
 
     function task2(event) {
-
+        event.preventDefault()
+        console.log(event.target)
     }
 
     function task3(event) {
@@ -40,6 +41,7 @@ export default function App() {
     function task5(event) {
 
     }
+
 
     return (
         <div>
