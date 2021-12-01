@@ -142,8 +142,12 @@ body {
     opacity: 1;
 }
 
-.slick-dots /*li:nth-child(n+10)*/ button::before {
+.slick-dots button::before {
     content: '0';
+}
+
+.slick-dots li:nth-child(n + 10) button::before {
+    content: '';
 }
 
 .header__content-btn {
