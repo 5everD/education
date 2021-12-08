@@ -76,6 +76,7 @@ export default function App() {
             <h1>ItGid.info</h1>
             {/*<p>{text}</p>*/}
             <hr/>
+
             <div>
                 <h2>Время сервера</h2>
                 <button onClick={task1}>GET</button>
