@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c7e3676-1d7d-45ed-8c4b-aca338ebd121" name="Changes" comment="" />
+    <list default="true" id="4c7e3676-1d7d-45ed-8c4b-aca338ebd121" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/contacts-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/whatsapp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Marafon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Marafon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,18 +21,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="21gs4Rwu0dStbBTRSspmMytTwbV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -32,12 +49,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638373873298</updated>
-      <workItem from="1638373874645" duration="14940000" />
+      <workItem from="1638373874645" duration="15251000" />
+      <workItem from="1638391445953" duration="28000" />
+      <workItem from="1638391586308" duration="410000" />
+      <workItem from="1638392466114" duration="80000" />
+      <workItem from="1638392562169" duration="817000" />
+      <workItem from="1638394316890" duration="1055000" />
+      <workItem from="1638460185908" duration="13489000" />
+      <workItem from="1638546974435" duration="13246000" />
+      <workItem from="1639070635650" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
