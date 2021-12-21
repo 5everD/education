@@ -5,7 +5,7 @@ import About from './components/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Note from './components/Note';
-// import Error from './components/Error';
+import Error from './components/Error';
 
 
 function App() {
@@ -19,8 +19,9 @@ function App() {
           <Route exact path="/" component={Main}/>
           <Route path="/about" component={About}/>
           <Route path="/create" component={Create}/>
-          <Route exactpath="/note" component={Note}/>
-          <Route exactpath="/note/:noteURL" component={Note}/>
+          <Route exact path="/note" component={Note}/>
+          <Route exact path="/note/:noteURL" component={Note}/>
+          <Route component ={Error}/>
         </Switch>
       </Router>
       <Footer>
