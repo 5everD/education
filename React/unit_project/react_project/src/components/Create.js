@@ -38,14 +38,14 @@ function Create() {
     return (
         <div className="container">
             <form onSubmit={loadDataFromForm} className={formClass}>
-                <label htmlFor="note">Введите заметку</label>
+                <label htmlFor="note">введите вашу заметку</label>
                 <textarea name="note" id="note" defaultValue="Test"></textarea>
-                <button type="submit">Создать</button>
+                <button type="submit">создать</button>
             </form>
             <div className={lineClass}>
                 <div>{url}</div>
                 <div>
-                    <button onClick={()=>window.location.reload()}>Создать новую заметку</button>
+                    <button className="btn__new-note" onClick={()=>window.location.reload()}>создать новую заметку</button>
                 </div>
             </div>
 

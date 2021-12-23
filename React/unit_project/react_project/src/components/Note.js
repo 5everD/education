@@ -63,22 +63,22 @@ function Note() {
                 <h4>Note:</h4>
                 <div>{noteText}</div>
                 <div>
-                    <button onClick={searchNote}>Смотреть еще один Note</button>
+                    <button onClick={searchNote}>смотреть еще один note</button>
                 </div>
             </div>
             <div className={errorClass}>
-                <p>Произошла ошибка, попробуйте еще раз.</p>
+                <p>произошла ошибка, попробуйте еще раз</p>
             </div>
             <div className={formClass}>
                 <form action="" onSubmit={getNote}>
-                    <label htmlFor="url">Введите hash заметки</label>
+                    <label htmlFor="url">введите hash заметки</label>
                     <input
                         type="text"
                         name="url"
                         id="url"
                         className="form-control"
                     />
-                    <button type="submit" className="btn btn-primary">Искать Note</button>
+                    <button type="submit" className="btn btn-primary">искать note</button>
                 </form>
             </div>
         </div>
