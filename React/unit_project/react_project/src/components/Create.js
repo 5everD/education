@@ -36,7 +36,7 @@ function Create() {
 
 
     return (
-        <div>
+        <div className="container">
             <form onSubmit={loadDataFromForm} className={formClass}>
                 <label htmlFor="note">Введите заметку</label>
                 <textarea name="note" id="note" defaultValue="Test"></textarea>

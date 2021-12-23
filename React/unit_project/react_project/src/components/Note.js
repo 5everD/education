@@ -3,17 +3,12 @@ import {useEffect, useState} from "react";
 import env from "../env.json";
 
 
-//http://localhost:3000/note/c1tczbgww3wbv1h3bk7zsget
-
-
 function Note() {
     const [noteText, setNoteText] = useState('');
     const [lineClass, setLineClass] = useState('hide');
     const [formClass, setFormClass] = useState('hide');
     const [errorClass, setErrorClass] = useState('hide');
-
     let {noteURL} = useParams();
-
 
     useEffect(() => {
         if (noteURL !== undefined) {
@@ -42,6 +37,7 @@ function Note() {
             setLineClass('hide');
             setErrorClass('hide');
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     function getNote(event) {
@@ -56,12 +52,19 @@ function Note() {
         window.location.href = env.url + '/' + url;
     }
 
+    function searchNote() {
+        window.location.href = env.url
+    }
+
 
     return (
-        <div>
+        <div className="container">
             <div className={lineClass}>
                 <h4>Note:</h4>
                 <div>{noteText}</div>
+                <div>
+                    <button onClick={searchNote}>Смотреть еще один Note</button>
+                </div>
             </div>
             <div className={errorClass}>
                 <p>Произошла ошибка, попробуйте еще раз.</p>
@@ -69,7 +72,12 @@ function Note() {
             <div className={formClass}>
                 <form action="" onSubmit={getNote}>
                     <label htmlFor="url">Введите hash заметки</label>
-                    <input type="text" name="url" id="url" className="form-control"/>
+                    <input
+                        type="text"
+                        name="url"
+                        id="url"
+                        className="form-control"
+                    />
                     <button type="submit" className="btn btn-primary">Искать Note</button>
                 </form>
             </div>
