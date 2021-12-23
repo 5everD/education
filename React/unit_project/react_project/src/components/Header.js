@@ -4,19 +4,15 @@ import {useEffect, useRef, useState} from "react";
 function Header() {
     const componentRef = useRef(null);
     const [refresh, setRefresh] = useState(false)
-    const [load, setload] = useState(false)
-
 
     function go() {
         setRefresh(true)
     }
-    useEffect(()=>{
-
-    },[])
 
     useEffect(() => {
         const lis = componentRef.current.querySelectorAll('.list');
         const nlink = componentRef.current.querySelectorAll('.navlink');
+
         function activeLink() {
             for (let i = 0; i < nlink.length; i++) {
                 if (nlink[i].classList.contains('active')) {
@@ -27,6 +23,7 @@ function Header() {
                 }
             }
         }
+
         activeLink()
         setRefresh(false)
     }, [refresh])

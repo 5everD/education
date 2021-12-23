@@ -37,8 +37,7 @@ function Note() {
             setLineClass('hide');
             setErrorClass('hide');
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [])
+    }, [noteURL])
 
     function getNote(event) {
         event.preventDefault();

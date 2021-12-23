@@ -9,26 +9,26 @@ import Error from './components/Error';
 
 
 function App() {
-  return (
-    <div className="main">
-      <Router>
-        <Header>
 
-        </Header>
-        <Switch>
-          <Route exact path="/" component={Main}/>
-          <Route path="/about" component={About}/>
-          <Route path="/create" component={Create}/>
-          <Route exact path="/note" component={Note}/>
-          <Route exact path="/note/:noteURL" component={Note}/>
-          <Route component ={Error}/>
-        </Switch>
-      </Router>
-      <Footer>
 
-      </Footer>
-    </div>
-  );
+    return (
+        <div className="main">
+            <Router>
+                <Header>
+                </Header>
+                <Switch>
+                    <Route exact path="/" component={Main}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/create" component={Create}/>
+                    <Route exact path="/note" component={Note}/>
+                    <Route exact path="/note/:noteURL" component={Note}/>
+                    <Route component={Error}/>
+                </Switch>
+            </Router>
+            <Footer>
+            </Footer>
+        </div>
+    );
 }
 
 export default App;
