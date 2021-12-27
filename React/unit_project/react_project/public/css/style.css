@@ -248,6 +248,21 @@ form button {
     cursor: pointer;
 }
 
+.new-url {
+    display: flex;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new-url span {
+    word-break:break-all;
+    text-align: center;
+    margin: 15px auto 15px;
+
+}
+
 .footer {
     position: relative;
     display: flex;

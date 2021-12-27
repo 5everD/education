@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import env from "../env.json";
 
 
-function Note() {
+function Note({switchState}) {
     const [noteText, setNoteText] = useState('');
     const [lineClass, setLineClass] = useState('hide');
     const [formClass, setFormClass] = useState('hide');
@@ -58,11 +58,11 @@ function Note() {
 
     return (
         <div className="container">
-            <div className={lineClass}>
-                <h4>Note:</h4>
-                <div>{noteText}</div>
+            <div className={"new-url" + ' ' + lineClass}>
+                <h4>ваша заметка:</h4>
+                <span>{noteText}</span>
                 <div>
-                    <button onClick={searchNote}>смотреть еще один note</button>
+                    <button className="btn__new-note" onClick={searchNote}>смотреть еще один note</button>
                 </div>
             </div>
             <div className={errorClass}>
@@ -77,7 +77,7 @@ function Note() {
                         id="url"
                         className="form-control"
                     />
-                    <button type="submit" className="btn btn-primary">искать note</button>
+                    <button type="submit" className="btn btn-primary" onClick={switchState} >искать note</button>
                 </form>
             </div>
         </div>

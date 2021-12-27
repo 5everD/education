@@ -42,8 +42,9 @@ function Create() {
                 <textarea name="note" id="note" defaultValue="Test"></textarea>
                 <button type="submit">создать</button>
             </form>
-            <div className={lineClass}>
-                <div>{url}</div>
+            <div className={"new-url" + ' ' + lineClass}>
+                <h4>ваша ссылка:</h4>
+                <span>{url}</span>
                 <div>
                     <button className="btn__new-note" onClick={()=>window.location.reload()}>создать новую заметку</button>
                 </div>

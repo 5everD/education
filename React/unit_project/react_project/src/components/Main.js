@@ -1,15 +1,15 @@
 import {NavLink} from "react-router-dom";
 
-function Main() {
+function Main({switchState}) {
 
     return (
         <div className="container">
             <div className="main">
                 <div className="note__create">
-                    <NavLink exact to="/create">создать note</NavLink>
+                    <NavLink onClick={switchState} exact to="/create" >создать note</NavLink>
                 </div>
                 <div className="note__view">
-                    <NavLink exact to="/note">посмотреть note</NavLink>
+                    <NavLink onClick={switchState} exact to="/note" >посмотреть note</NavLink>
                 </div>
             </div>
         </div>

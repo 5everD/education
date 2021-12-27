@@ -1,17 +1,19 @@
 import {NavLink} from "react-router-dom";
 import {useEffect, useRef, useState} from "react";
 
-function Header() {
+function Header({active, setActive}) {
     const componentRef = useRef(null);
     const [refresh, setRefresh] = useState(false)
 
     function go() {
-        setRefresh(true)
+        setRefresh(true);
+        setActive(false);
     }
 
     useEffect(() => {
         const lis = componentRef.current.querySelectorAll('.list');
         const nlink = componentRef.current.querySelectorAll('.navlink');
+
 
         function activeLink() {
             for (let i = 0; i < nlink.length; i++) {
@@ -26,7 +28,7 @@ function Header() {
 
         activeLink()
         setRefresh(false)
-    }, [refresh])
+    }, [refresh, active])
 
 
     return (
