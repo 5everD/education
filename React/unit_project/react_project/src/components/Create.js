@@ -8,8 +8,8 @@ function Create() {
     const [formClass, setFormClass] = useState('');
 
     const sendData = (obj) => {
-        setFormClass('hide')
-        setLineClass('')
+        setFormClass('hide');
+        setLineClass('');
         fetch(env.urlBackend, {
             method: 'POST',
             headers: {
@@ -38,17 +38,25 @@ function Create() {
         <div className="container">
             <form onSubmit={loadDataFromForm} className={formClass}>
                 <label htmlFor="note">введите вашу заметку</label>
-                <textarea name="note" id="note" defaultValue="Test"></textarea>
+                <textarea
+                    name="note"
+                    id="note"
+                    defaultValue="Test"
+                >
+                </textarea>
                 <button type="submit">создать</button>
             </form>
             <div className={`new-url ${lineClass}`}>
                 <h4>ваша ссылка:</h4>
                 <span>{url}</span>
                 <div>
-                    <button className="btn__new-note" onClick={()=>window.location.reload()}>создать новую заметку</button>
+                    <button
+                        className="btn__new-note"
+                        onClick={() => window.location.reload()}
+                    >создать новую заметку
+                    </button>
                 </div>
             </div>
-
         </div>
     );
 }
