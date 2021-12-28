@@ -1,5 +1,6 @@
-import {useState} from "react";
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {useState} from 'react';
+import {Routes, Route} from 'react-router-dom';
+
 import Create from './components/Create';
 import Main from './components/Main';
 import About from './components/About';
@@ -11,6 +12,7 @@ import Error from './components/Error';
 
 function App() {
     const [active, setActive] = useState(false);
+
     function switchState() {
         setActive(true);
     }
@@ -18,19 +20,16 @@ function App() {
 
     return (
         <div className="main">
-            <Router>
-                <Header active={active} setActive={setActive}>
-                </Header>
-                <Switch>
-                    <Route exact path="/" render={() => <Main switchState={switchState}/>}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/create" component={Create}/>
-                    {/*<Route exact path="/note" component={Note}/>*/}
-                    <Route exact path="/note" render={() => <Note switchState={switchState}/>}/>
-                    <Route exact path="/note/:noteURL" render={() => <Note switchState={switchState}/>}/>
-                    <Route component={Error}/>
-                </Switch>
-            </Router>
+            <Header active={active} setActive={setActive}>
+            </Header>
+            <Routes>
+                <Route path="/" element={<Main switchState={switchState}/>}/>
+                <Route path="about" element={<About/>}/>
+                <Route path="create" element={<Create/>}/>
+                <Route path="note" element={<Note switchState={switchState}/>}/>
+                <Route path="note/:noteURL" element={<Note switchState={switchState}/>}/>
+                <Route path="*" element={Error}/>
+            </Routes>
             <Footer>
             </Footer>
         </div>
