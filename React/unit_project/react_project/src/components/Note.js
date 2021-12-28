@@ -58,7 +58,7 @@ function Note({switchState}) {
 
     return (
         <div className="container">
-            <div className={"new-url" + ' ' + lineClass}>
+            <div className={`new-url ${lineClass}`}>
                 <h4>ваша заметка:</h4>
                 <span>{noteText}</span>
                 <div>

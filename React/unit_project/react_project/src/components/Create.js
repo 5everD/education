@@ -19,7 +19,6 @@ function Create() {
         })
             .then(response => response.json())
             .then(response => {
-                console.log(response);
                 response.result && setUrl(env.url + '/' + response.url);
             })
     }
@@ -42,7 +41,7 @@ function Create() {
                 <textarea name="note" id="note" defaultValue="Test"></textarea>
                 <button type="submit">создать</button>
             </form>
-            <div className={"new-url" + ' ' + lineClass}>
+            <div className={`new-url ${lineClass}`}>
                 <h4>ваша ссылка:</h4>
                 <span>{url}</span>
                 <div>

@@ -6,10 +6,10 @@ function Main({switchState}) {
         <div className="container">
             <div className="main">
                 <div className="note__create">
-                    <NavLink onClick={switchState} exact to="/create" >создать note</NavLink>
+                    <NavLink onClick={switchState} to="/create" >создать note</NavLink>
                 </div>
                 <div className="note__view">
-                    <NavLink onClick={switchState} exact to="/note" >посмотреть note</NavLink>
+                    <NavLink onClick={switchState} to="/note" >посмотреть note</NavLink>
                 </div>
             </div>
         </div>

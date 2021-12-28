@@ -36,7 +36,7 @@ function Header({active, setActive}) {
             <nav className="navigation">
                 <ul>
                     <li className="list" onClick={go}>
-                        <NavLink exact to="/" className="navlink">
+                        <NavLink to="/" className="navlink">
                             <span className="icon">
                                 <ion-icon name="home-outline"/>
                             </span>
@@ -44,7 +44,7 @@ function Header({active, setActive}) {
                         </NavLink>
                     </li>
                     <li className="list" onClick={go}>
-                        <NavLink exact to="/create" className="navlink">
+                        <NavLink to="/create" className="navlink">
                             <span className="icon">
                                 <ion-icon name="code-download-outline"/>
                             </span>
@@ -52,7 +52,7 @@ function Header({active, setActive}) {
                         </NavLink>
                     </li>
                     <li className="list" onClick={go}>
-                        <NavLink exact to="/note" className="navlink">
+                        <NavLink to="/note" className="navlink">
                             <span className="icon">
                                 <ion-icon name="document-text-outline"/>
                             </span>
@@ -60,7 +60,7 @@ function Header({active, setActive}) {
                         </NavLink>
                     </li>
                     <li className="list" onClick={go}>
-                        <NavLink exact to="/about" className="navlink">
+                        <NavLink to="/about" className="navlink">
                             <span className="icon">
                                 <ion-icon name="information-circle-outline"/>
                             </span>
